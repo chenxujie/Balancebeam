@@ -1,0 +1,70 @@
+.beam-tabs{
+	overflow : hidden;
+}
+.beam-tabs>.head{
+	height : 35px; 
+	width : 100%; 
+	overflow : hidden; 
+	white-space : nowrap; 
+	background : url(images/tabs_headbg.gif) repeat-x 0 bottom; 
+}
+.beam-tabs>.head>ul{
+	word-wrap : normal; 
+	margin : 0px 10px;
+	line-height : 27px;
+	height: 27px; 
+	padding-top : 8px;  
+	overflow : hidden; 
+}
+.beam-tabs>.head>ul>li{
+	display : inline-block; 
+	height : 27px; 
+	line-height : 27px;
+	margin-right: 5px;
+	word-wrap:normal;
+}
+.beam-tabs>.head>ul>li>a{
+	float : left; 
+	height : 27px; 
+	line-height : 27px; 
+	padding-left : 10px; 
+	display : block;
+	background : url(images/tabs_menu.gif) no-repeat left center; 
+}
+.beam-tabs>.head>ul>li>a:hover{
+	background-position : left top; 
+	text-decoration : none; 
+}
+.beam-tabs>.head>ul>li>a>span{ 
+	float : left; 
+	height : 27px; 
+	line-height: 27px;
+	padding-right : 10px; 
+	display : block; 
+	font-size : bold 14px; 
+	color : #025FAC; 
+	cursor : pointer;  
+	background : url(images/tabs_menu.gif) no-repeat right center; 
+}
+.beam-tabs>.head>ul>li>a:hover>span{ 
+	background-position : right top; 
+	cursor : pointer; 
+}
+.beam-tabs>.head>ul>li.on>a, .beam-tabs>.head>ul>li.on>a:hover{ 
+	background-position : left bottom; 
+	text-decoration : none; 
+}
+.beam-tabs>.head>ul>li.on>a>span, .beam-tabs>.head>ul>li.on>a:hover>span{ 
+	background-position : right bottom; 
+	color : #000; 
+	cursor : pointer; 
+}
+.beam-tabs>.boxs{
+	border : 1px solid #a4c4dd;
+	border-top : 0;
+	overflow : hidden;
+}
+.beam-tabs>.boxs>.box{
+	width : 100%;
+	height : 100%;
+}

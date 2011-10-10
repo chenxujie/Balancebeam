@@ -1,0 +1,361 @@
+.beam-borderlayout{
+	background-color : #DFE8F6;
+	position : relative;
+}
+/*** 北向容器 ***/
+.beam-borderlayout>.region-north{
+	position : absolute;
+	left : 5px;
+	top : 5px;
+	overflow : hidden;
+	background-color : transparent;
+}
+.beam-borderlayout>.region-north>.head{ /* 北向表头 */
+	overflow : hidden;
+	border : 1px solid #99BBE8;
+	border-bottom : 0;
+	padding : 4px 0 4px 0;
+	height : 16px;
+	position : relative;
+	background : url(images/borderlayout-header-top-bg.gif) repeat-x;
+}
+.beam-borderlayout>.region-north>.head>.caption{ /* 北向表头标题 */
+	text-indent : 5px;
+	font : bold 11px  tahoma,arial,verdana,sans-serif; 
+	color : #04468C;
+}
+.beam-borderlayout>.region-north>.head>.toggle{  /* 北向表头伸缩按钮 */
+	float : right;
+	display : none;
+	width : 15px;
+	height : 15px;
+	margin-right : 5px;
+	margin-top : 0.5px;
+	cursor : pointer;
+	overflow : hidden;
+	background : url(images/global-sprites.gif) no-repeat 0 -210px; 
+}
+.beam-borderlayout>.region-north>.head>.toggle:hover{ 
+	background : url(images/global-sprites.gif) no-repeat -15px -210px; 
+}
+.beam-borderlayout>.region-north>.head>.toggle.off{
+	background : url(images/global-sprites.gif) no-repeat 0 -195px; 
+}
+.beam-borderlayout>.region-north>.head>.toggle.off:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -195px; 
+}
+.beam-borderlayout>.region-north>.box{
+	border : 1px solid #99BBE8;
+	background-color : #FFF;
+}
+.beam-borderlayout>.splitter-north{
+	position : absolute;
+	left : 5px;
+	height : 5px;
+	overflow : hidden;
+	cursor : n-resize;
+}
+.beam-borderlayout>.splitter-north>.toggle{
+	height : 5px;
+	width : 35px;
+	overflow : hidden;
+	position : absolute;
+	left : 50%;
+	margin-left : -17px;
+	cursor : pointer;
+	background : url(images/borderlayout-toggle-top.gif);
+}
+.beam-borderlayout>.splitter-north>.toggle.off{
+	background : url(images/borderlayout-toggle-bottom.gif);
+}
+
+.beam-borderlayout>.region-south{
+	background-color : transparent;
+	overflow : hidden;
+	position : absolute;
+	left : 5px;
+	top : 5px;
+}
+.beam-borderlayout>.region-south>.head{
+	overflow : hidden;
+	border : 1px solid #99BBE8;
+	border-bottom : 0;
+	padding : 4px 0 4px 0;
+	height : 16px;
+	position : relative;
+	background : url(images/borderlayout-header-top-bg.gif) repeat-x;
+}
+.beam-borderlayout>.region-south>.head>.caption{
+	text-indent : 5px;
+	color : #04468C;
+	font : bold 11px  tahoma,arial,verdana,sans-serif; 
+}
+.beam-borderlayout>.region-south>.head>.toggle{
+	float : right;
+	display : none;
+	width : 15px;
+	height : 15px;
+	margin-right : 5px;
+	margin-top : 0.5px;
+	cursor : pointer;
+	overflow : hidden;
+	background : url(images/global-sprites.gif) no-repeat 0 -195px; 
+}
+.beam-borderlayout>.region-south>.head>.toggle:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -195px; 
+}
+.beam-borderlayout>.region-south>.head>.toggle.off{
+	background : url(images/global-sprites.gif) no-repeat 0 -210px; 
+}
+.beam-borderlayout>.region-south>.head>.toggle.off:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -210px; 
+}
+.beam-borderlayout>.region-south>.box{
+	border : 1px solid #99BBE8;
+	background-color : #FFF;
+}
+.beam-borderlayout>.splitter-south{
+	position : absolute;
+	left : 5px;
+	height : 5px;
+	overflow : hidden;
+	cursor : s-resize;
+}
+.beam-borderlayout>.splitter-south>.toggle{
+	height : 5px;
+	width : 35px;
+	overflow : hidden;
+	position : absolute;
+	left : 50%;
+	margin-left : -17px;
+	cursor : pointer;
+	background : url(images/borderlayout-toggle-bottom.gif);
+}
+.beam-borderlayout>.splitter-south>.toggle.off{
+	background : url(images/borderlayout-toggle-top.gif);	
+}
+.beam-borderlayout>.viewport{
+	position : absolute;
+	left : 5px;
+	overflow : hidden;
+}
+.beam-borderlayout>.viewport>.region-west{
+	background-color : transparent;
+	overflow : hidden;
+	position : absolute;
+	left : 0;
+	top : 0;
+}
+.beam-borderlayout>.viewport>.region-west>.head{
+	overflow : hidden;
+	border : 1px solid #99BBE8;
+	border-bottom : 0;
+	padding : 4px 0 4px 0;
+	height : 16px;
+	position : relative;
+	background : url(images/borderlayout-header-top-bg.gif) repeat-x;
+}
+.beam-borderlayout>.viewport>.region-west>.head>.caption{
+	text-indent : 5px;
+	color : #04468C;
+	font : bold 11px  tahoma,arial,verdana,sans-serif; 
+}
+.beam-borderlayout>.viewport>.region-west>.head>.toggle{
+	float : right;
+	display : none;
+	width : 15px;
+	height : 15px;
+	margin-right : 5px;
+	margin-top : 0.5px;
+	cursor : pointer;
+	overflow : hidden;
+	background : url(images/global-sprites.gif) no-repeat 0 -180px; 
+}
+.beam-borderlayout>.viewport>.region-west>.head>.toggle:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -180px; 
+}
+.beam-borderlayout>.viewport>.region-west>.head>.toggle.off{
+	background : url(images/global-sprites.gif) no-repeat 0 -165px; 
+}
+.beam-borderlayout>.viewport>.region-west>.head>.toggle.off:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -165px; 
+}
+.beam-borderlayout>.viewport>.region-west>.box{
+	border : 1px solid #99BBE8;
+	background-color : #FFF;
+}
+.beam-borderlayout>.viewport>.region-west>.placeholder{
+	display : none;
+	position : absolute;
+	top : 0;
+	left : 0;
+	padding : 0 4px 0 4px;
+	width : 16px;
+	height : 99%;
+	border : 1px solid #99BBE8;
+	overflow : hidden;
+	background : url(images/borderlayout-header-left-bg.gif);
+}
+.beam-borderlayout>.viewport>.region-west>.placeholder>.toggle{
+	margin-top : 5px;
+	margin-left : 0.5px;
+	width : 15px;
+	height : 15px;
+	cursor : pointer;
+	overflow : hidden;
+	background : url(images/global-sprites.gif) no-repeat 0 -165px; 
+}
+.beam-borderlayout>.viewport>.region-west>.placeholder>.toggle:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -165px; 
+}
+.beam-borderlayout>.viewport>.region-west>.placeholder>.surface{
+	margin-top : 5px;
+	margin-left : 2.5px;
+	width : 15px;
+	height : 100px;
+	overflow : hidden;
+	/*layout-flow:vertical-ideographic;*/
+}
+.beam-borderlayout>.viewport>.splitter-west{
+	position : absolute;
+	top : 0;
+	width : 5px;
+	height : 100%;
+	overflow : hidden;
+	cursor : w-resize;
+}
+.beam-borderlayout>.viewport>.splitter-west>.toggle{
+	width : 5px;
+	height : 35px;
+	overflow : hidden;
+	position : absolute;
+	top : 50%;
+	margin-top : -17px;
+	cursor : pointer;
+	background : url(images/borderlayout-toggle-left.gif);
+}
+.beam-borderlayout>.viewport>.splitter-west>.toggle.off{
+	background : url(images/borderlayout-toggle-right.gif);
+}
+.beam-borderlayout>.viewport>.region-east{
+	background-color : transparent;
+	overflow : hidden;
+	position : absolute;
+	right : 0;
+	top : 0;
+}
+.beam-borderlayout>.viewport>.region-east>.head{
+	overflow : hidden;
+	border : 1px solid #99BBE8;
+	border-bottom : 0;
+	padding : 4px 0 4px 0;
+	height : 16px;
+	position : relative;
+	background : url(images/borderlayout-header-top-bg.gif) repeat-x;
+}
+.beam-borderlayout>.viewport>.region-east>.head>.caption{
+	text-indent : 5px;
+	color : #04468C;
+	font : bold 11px  tahoma,arial,verdana,sans-serif; 
+}
+.beam-borderlayout>.viewport>.region-east>.head>.toggle{
+	float : right;
+	display : none;
+	width : 15px;
+	height : 15px;
+	margin-right : 5px;
+	margin-top : 0.5px;
+	cursor : pointer;
+	overflow : hidden;
+	background : url(images/global-sprites.gif) no-repeat 0 -165px; 
+}
+.beam-borderlayout>.viewport>.region-east>.head>.toggle:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -165px; 
+}
+.beam-borderlayout>.viewport>.region-east>.head>.toggle.off{
+	background : url(images/global-sprites.gif) no-repeat 0 -180px; 
+}
+.beam-borderlayout>.viewport>.region-east>.head>.toggle.off:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -180px; 
+}
+.beam-borderlayout>.viewport>.region-east>.box{
+	border : 1px solid #99BBE8;
+	background-color : #FFF;
+}
+.beam-borderlayout>.viewport>.region-east>.placeholder{
+	display : none;
+	position : absolute;
+	top : 0;
+	left : 0;
+	padding : 0 4px 0 4px;
+	width : 16px;
+	height : 99%;
+	border : 1px solid #99BBE8;
+	overflow : hidden;
+	background : url(images/borderlayout-header-right-bg.gif);
+}
+.beam-borderlayout>.viewport>.region-east>.placeholder>.toggle{
+	margin-top : 5px;
+	margin-left : 0.5px;
+	width : 15px;
+	height : 15px;
+	cursor : pointer;
+	overflow : hidden;
+	background : url(images/global-sprites.gif) no-repeat 0 -180px; 
+}
+.beam-borderlayout>.viewport>.region-east>.placeholder>.toggle:hover{
+	background : url(images/global-sprites.gif) no-repeat -15px -180px; 
+}
+.beam-borderlayout>.viewport>.region-east>.placeholder>.surface{
+	margin-top : 5px;
+	margin-left : 2.5px;
+	width : 15px;
+	height : 100px;
+	overflow : hidden;
+	/*layout-flow:vertical-ideographic;*/
+}
+.beam-borderlayout>.viewport>.splitter-east{
+	position : absolute;
+	top : 0;
+	width : 5px;
+	height : 100%;
+	overflow : hidden;
+	cursor : e-resize;
+}
+.beam-borderlayout>.viewport>.splitter-east>.toggle{
+	width : 5px;
+	height : 35px;
+	overflow : hidden;
+	position : absolute;
+	top : 50%;
+	margin-top : -17px;
+	cursor : pointer;
+	background : url(images/borderlayout-toggle-right.gif);
+}
+.beam-borderlayout>.viewport>.splitter-east>.toggle.off{
+	background : url(images/borderlayout-toggle-left.gif);
+}
+.beam-borderlayout>.viewport>.region-center{
+	background-color : transparent;
+	overflow : hidden;
+	position : absolute;
+	top : 0;
+}
+.beam-borderlayout>.viewport>.region-center>.head{
+	overflow : hidden;
+	border : 1px solid #99BBE8;
+	border-bottom : 0;
+	padding : 4px 0 4px 0;
+	height : 16px;
+	position : relative;
+	background : url(images/borderlayout-header-top-bg.gif) repeat-x;
+}
+.beam-borderlayout>.viewport>.region-center>.head>.caption{
+	text-indent : 5px;
+	color : #04468C;
+	font : bold 11px  tahoma,arial,verdana,sans-serif; 
+}
+.beam-borderlayout>.viewport>.region-center>.box{
+	border : 1px solid #99BBE8;
+	background-color : #FFF;
+}

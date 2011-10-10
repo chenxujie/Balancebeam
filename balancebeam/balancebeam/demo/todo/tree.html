@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../../themes/default/uit.all.css"></link>
+<script type="text/javascript" src="../../jquery-1.6.js"></script>
+<script type="text/javascript" src="../utils/uit.toolkit.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../tree/uit.tree.js"></script>
+<script type="text/javascript" src="../tree/uit.tree.local.js"></script>
+<script type="text/javascript" src="../tree/uit.tree.xhr.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#tree").tree({
+		dataProvider : [{title : "姓名",id : "name"},{title : "年龄",id : "age"},{title : "地址",id : "address"}]
+	});
+});
+</script>
+</head>
+<body>
+	<div id="tree"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/*** 锁定列样式 ***/
+.beam-grid>.headers>.header.locked.splitter{
+	border-right : 1px solid #000;
+}
+.beam-grid>.contents>.content.locked.splitter{
+	border-right : 1px solid #000;
+}
+.beam-grid>.headers>.header.locked.splitter .th.splitter{
+	border-right : 0;
+}
+.beam-grid>.contents>.content.locked.splitter .td.splitter{
+	border-right : 0;
+}
+/*** 锁定行样式 ***/
+.beam-grid>.contents>.content>.viewport.locked.bottom div.td{
+	border-top : 1px solid #D0D0D0;
+	border-bottom : 0;
+}
+.beam-grid>.contents>.content>.viewport.locked.bottom tr.splitter div.td{
+	border-top : 0;
+}
+.beam-grid>.contents>.content>.viewport.locked.bottom{
+	border-top : 1px solid #000;
+}
+.beam-grid>.contents>.content>.viewport.locked.top div.td{
+	border-top : 0;
+	border-bottom : 1px solid #D0D0D0;
+}
+.beam-grid>.contents>.content>.viewport.locked.top tr.splitter div.td{
+	border-bottom : 0;
+}
+.beam-grid>.contents>.content>.viewport.locked.top{
+	border-bottom : 1px solid #000;
+}

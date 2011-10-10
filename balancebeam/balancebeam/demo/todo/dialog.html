@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>对话窗口</title>
+<link rel="stylesheet" type="text/css" href="../../themes/default/beam.uncompressed.css"></link>
+<script type="text/javascript" src="../../lib/jquery-1.6.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.resizable.js"></script>
+<script type="text/javascript" src="../../lib/widget/beam.js"></script>
+
+<script type="text/javascript" src="../../lib/widget/popup/beam.dialog.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#dialog").dialog({
+		iframe : false,
+		modal : false,
+		href : "grid_composite.html"
+	});
+	
+});
+function openDialog(){
+	$("#dialog").dialog("show");
+}
+</script>
+</head>
+<body>zxczcx<br>zxczcx<br>zxczcxddddddddddddddddddddddddddddddddddddddd<br>zxczcx<br>zxczcx<br>zxczcx<br>zxczcx<br>
+	<div id="dialog"></div>
+	<button onclick="openDialog()">open</button>
+</body>
+</html>

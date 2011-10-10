@@ -1,0 +1,53 @@
+.beam-notice{
+	background : #FFF;
+	overflow : hidden;
+	position : fixed;
+	bottom : 5px;
+	right : 1px;
+	width : 100px;
+	height : 28px;
+	z-index : 200;  /*** ***/
+	border : 1px solid #5D9BD1;
+	font : 12px "Arial, Verdana, Helvetica, sans-serif";
+}
+.beam-notice>.head{
+	height : 28px;
+	line-height : 28px;
+	overflow : hidden;
+	color : #FFF;
+	background : #eee url(images/notice_head.gif) repeat-x left top;
+}
+.beam-notice>.head>.toggle{
+	width : 20px;
+	height : 16px;
+	overflow : hidden;
+	float : right;
+	margin : 1px 1px;
+	background : url(images/notice_maximize.gif) no-repeat left top;
+}
+.beam-notice>.head>.caption{
+	overflow : hidden;
+	font-weight : bold;
+	padding-left : 10px;
+	text-align : left;
+}
+.beam-notice>.head>.on{
+	background : url(images/notice_minimize.gif) no-repeat left top;
+}
+.beam-notice>.box{
+	width : auto;
+	overflow-x : hidden;
+	overflow-y : auto;
+}
+.beam-notice>.box>ul,.beam-notice>.box>ul>li{
+	list-style-type : none;
+	margin : 0px;
+	padding : 0px;
+	text-align : left;
+}
+.beam-notice>.box>ul>li{
+	display : none;
+	padding : 5px;
+	overflow : hidden;
+	height : 21px;
+}

@@ -1,0 +1,73 @@
+.beam-grid{
+	position : relative;
+	border : 1px solid #99bbe8;
+	-moz-user-select : none;
+	text-align : left;
+}
+.beam-grid>.headers{
+	z-index : 2;
+	position : relative;
+	background : url(images/grid-header-bg.gif);
+	border-bottom : 1px solid #99bbe8;
+}
+.beam-grid>.headers>.header{
+	top : 0;
+	position : absolute;
+	overflow : hidden;	
+}
+.beam-grid>.headers>.header>table{
+	top : 0;
+	position : absolute;
+	table-layout : fixed;
+	height : 100%;
+}
+.beam-grid>.headers>.header div.th{
+	cursor : default;
+	position : relative;
+	height : 24px;
+	line-height : 24px;
+	overflow : hidden;
+	text-indent : 5px;
+	text-overflow : ellipsis;
+	border-right : 1px solid #D0D0D0;
+	border-bottom : 1px solid #99bbe8;
+}
+.beam-grid>.headers>.header tr.splitter div.th{
+	border-bottom : 0;
+}
+/*** 鼠标滑动样式 ***/
+.beam-grid>.headers>.header div.th:hover{
+	background : url(images/grid-header-over-bg.gif);
+}
+/*** 多标题 ***/
+.beam-grid>.headers>.header div.th.multi{
+	border-bottom : 1px solid #D0D0D0;
+}
+.beam-grid>.contents{
+	position : relative;
+	overflow : hidden;
+}
+.beam-grid>.contents>.content{
+	position : absolute;
+}
+.beam-grid>.contents>.content>.viewport{
+	position : absolute;
+	overflow : hidden;
+	width : 100%;
+}
+.beam-grid>.contents>.content>.viewport>table{
+	position : absolute;
+	table-layout : fixed;
+}
+.beam-grid>.contents tr.odd{
+	background-color : #FAFAFA;
+}
+.beam-grid>.contents>.content>.viewport>table div.td{
+	height : 20px;
+	line-height : 20px;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	text-indent : 5px;
+	border-right : 1px solid #D0D0D0;
+	border-bottom : 1px solid #EDEDED;
+}

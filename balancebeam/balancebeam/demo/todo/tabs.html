@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../../themes/default/uit.all.css"></link>
+<script type="text/javascript" src="../../jquery-1.5.2.js"></script>
+<script type="text/javascript" src="../utils/uit.toolkit.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../layout/uit.container.js"></script>
+<script type="text/javascript" src="../layout/uit.tabs.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#tabs").tabs({
+		height : "300px",
+		dataProvider:[
+	                               {title:"AAA",href:"#aa"},
+	                               {title:"BBB",href:"#bb"}
+	                               ]});
+});
+</script>
+</head>
+<body>
+	<div id="tabs">
+		<div id="aa">AAA</div>
+		<div id="bb">BBB</div>
+	</div>
+</body>
+</html>

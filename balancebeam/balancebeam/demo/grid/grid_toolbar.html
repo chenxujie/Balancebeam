@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>基本数据表格</title>
+
+<link rel="stylesheet" type="text/css" href="../../themes/default/beam.uncompressed.css"></link>
+<link rel="stylesheet" type="text/css" href="../../lib/jquery/lib/jquery/themes/base/jquery.ui.all.css"></link>
+<script type="text/javascript" src="../../lib/jquery-1.6.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../../lib/widget/beam.toolkit.js"></script>
+
+<script type="text/javascript" src="../../lib/widget/layout/beam.container.js"></script>
+<script type="text/javascript" src="../../lib/widget/grid/beam.grid.js"></script>
+<script type="text/javascript" src="../../lib/widget/grid/beam.grid.scroller.js"></script>
+<script type="text/javascript" src="../../lib/widget/grid/beam.grid.sortable.js"></script>
+<script type="text/javascript" src="../../lib/widget/menu/beam.menu.js"></script>
+<script type="text/javascript" src="../../lib/widget/grid/beam.grid.toolbar.js"></script>
+<script type="text/javascript" src="grid_base.js"></script>
+<style>
+body{
+	text-align : center;
+}
+#grid{
+	margin : auto;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	$("#grid").grid({
+			height : "350px",
+			layout : [
+				[[
+					{title:"company",width : 200,filedIndex : 0},
+					{title:"price",width : 100,filedIndex : 1,dataType:"number",dataType : "number"},
+					{title:"change",width : 100,filedIndex : 2, format : change,dataType : "number"},
+					{title:"pctChange",width : 100,filedIndex : 3, format : change,dataType : "number",dropmenu:false},
+					{title:"lastChange",width : 100,filedIndex : 4,hidden:true}
+				]]
+			],		
+			dataProvider : dataProvider,
+			plugins : {
+				toolbar : {
+					filedIndex : 0
+				}
+			}
+		});
+	$("#grid").grid("resize");
+});
+
+</script>
+</head>
+<body>
+<br>
+	<br>
+	<H1>这是一个点击工具栏下拉菜单的表格（可以隐藏显示列和查询匹配）</H1>
+	<br>
+	<div id="grid" ></div>
+</body>
+</html>

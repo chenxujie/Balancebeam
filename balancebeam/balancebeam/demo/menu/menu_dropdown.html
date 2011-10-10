@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../themes/default/beam.uncompressed.css"></link>
+<script type="text/javascript" src="../../lib/jquery-1.6.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../../lib/widget/beam.toolkit.js"></script>
+
+<script type="text/javascript" src="../../lib/widget/menu/beam.menu.js"></script>
+<script type="text/javascript" src="menu_data.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#menu").menu({
+		menuBar : false,
+		dataProvider : dataProvider,
+		onClick : function(data){
+			var href = data.href;
+			if(href){
+				window.location.href = href;
+			}
+			else{
+				alert("缺少url");
+			}
+		}
+	});
+});
+
+</script>
+</head>
+<body>
+<br>
+	<div id="menu" ></div>
+</body>
+</html>

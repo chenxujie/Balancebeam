@@ -1,0 +1,92 @@
+
+html, body{
+	width : 100%;
+	height : 100%;
+}
+html{
+	
+}
+body { 
+	color : #333; 
+	font : normal 12px Arial, Verdana, Helvetica, sans-serif; 
+	background-color : #FFF; 
+}
+html, body, div, span, dl, dt, dd, ul, ol, li, pre, form, fieldset, blockquote, p, h1, h2, h3, h4, h5, h6{ 
+	padding : 0; 
+	margin : 0; 
+}
+img{ 
+	border : none;
+}
+input,select{
+	vertical-align : middle;
+}
+
+.beam-pagemask{
+	background : #FFF;
+	overflow : hidden;
+	position : fixed;
+	left : 0px;
+	top : 0px;
+	width : 100%;
+	height : 100%;
+	display : none;
+	filter: alpha(opacity=0);
+	opacity:.0;
+	z-index : 100;  
+}
+
+.beam-ajaxmask{
+	position : fixed;
+	left : 0px;
+	top : 0px;
+	width : 100%;
+	height : 100%;
+	display : none;
+	z-index : 1000;  
+}
+.beam-ajaxmask>.mask{
+	background : #FFF;
+	width : 100%;
+	height : 100%;
+	filter: alpha(opacity=0);
+	opacity:.0;
+}
+.beam-ajaxmask>.detail{
+	position : absolute;
+	/*
+	left : 50%;
+	top : 50%;
+	width : 200px;
+	height : 50px;
+	*/
+	right : 0px;
+	top : 0px;
+	width : 200px;
+	height : 21px;
+	
+}
+.beam-ajaxmask>.detail>.shift{
+	background : #FFF;
+	position : relative;
+	/*
+	left : -50%;
+	top : -50%;
+	*/
+	width : 100%;
+	height : 21px;
+	line-height : 21px;
+	overflow : hidden;
+	text-align : right;
+}
+.beam-ajaxmask>.detail>.shift>label{
+	font-size : 13px;
+	font-weight : bold;
+	font-style : italic ;
+	padding-right : 5px;
+}
+.beam-boxloading{
+	height : 50px;
+	overflow : hidden;
+	background : background : transparent url(images/global_loading.gif) no-repeat center center; 
+}

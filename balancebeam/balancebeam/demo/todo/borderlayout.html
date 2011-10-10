@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../../themes/default/uit.all.css"></link>
+<script type="text/javascript" src="../../jquery-1.6.js"></script>
+<script type="text/javascript" src="../utils/uit.toolkit.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../layout/uit.container.js"></script>
+<script type="text/javascript" src="../layout/uit.borderlayout.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#borderlayout").borderlayout({
+		northRegion : {
+			collapsible: true,
+            title: 'North',
+            split: true,
+            height: 100,
+            href : null,
+            xhr : null
+		},
+		southRegion : {
+			collapsible: true,
+            title: 'South',
+            split: true,
+            toolbar : true,
+            height: 100,
+            href : null,
+            xhr : null
+		},
+		westRegion : {
+			collapsible: true,
+            title: 'West',
+            split: true,
+            toolbar : true,
+            width: 200,
+            href : null,
+            xhr : null
+		},
+		eastRegion : {
+			collapsible: true,
+            title: 'West',
+            split: true,
+            width: 200,
+            toolbar : true,
+            href : null,
+            xhr : null
+		}
+	});
+});
+</script>
+</head>
+<body>
+	<div id="borderlayout">
+	</div>
+	
+</body>
+</html>

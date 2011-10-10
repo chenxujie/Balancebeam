@@ -1,0 +1,42 @@
+.beam-grid>.headers .col-resize{
+	position : absolute;
+	top : 0;
+	right : 0;
+	width : 3px;
+	height : 100%;
+	overflow : hidden;
+	cursor : col-resize;
+	display : none;
+	z-index : 2;
+}
+.beam-grid>.headers .th>.col-resize{
+	display : block;
+	visibility : visible;
+}
+.beam-grid>.headers>.resize-proxy{
+	position : absolute;
+	top : 0;
+	border-left : 1px dashed #000;
+	display : none;
+	width : 0px;
+	font-size : 1px;
+}
+.beam-grid>.headers>.resize-proxy>span{
+	position : absolute;
+	top : -2px;
+	left : 2px;
+	font-size : 10px;
+	font-style : italic;
+}
+.beam-grid>.headers .th>.drop-btn{
+	cursor : pointer;
+	position : absolute;
+	top : 0;
+	right : 1px;
+	width : 14px;
+	height : 100%;
+	background : url(images/grid-header-dropbtn.gif) 0 50%;
+}
+.beam-grid>.headers>.drop-btn{
+	display : none;
+}

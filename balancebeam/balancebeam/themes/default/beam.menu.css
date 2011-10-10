@@ -1,0 +1,161 @@
+.beam-menu{
+	position : relative;
+	text-align : left;
+}
+.beam-menu .menu-bar{
+	padding-left : 20px;
+	padding-right : 20px;
+	overflow : hidden;
+	background :#F0F0F0;
+	position : relative;
+	-moz-box-shadow:1px 1px 2px  #333333;
+	-webkit-box-shadow:1px 1px 2px  #333333;
+}
+.beam-menu .menu-bar .lholder{
+	z-index : 1;
+	position : absolute;
+	width : 20px;
+	top : 0;
+	left : 0;
+	height : 100%;
+	background : #F0F0F0;
+}
+.beam-menu .menu-bar .rholder{
+	z-index : 1;
+	position : absolute;
+	width : 20px;
+	top : 0;
+	right : 0;
+	height : 100%;
+	background : #F0F0F0;
+}
+.beam-menu .menu-bar .inner{
+	width : 20000px;
+}
+.beam-menu .menu-bar .menu-item{
+	height : 26px;
+	line-height : 26px;
+	z-index : 2;
+	width : 70px;
+	overflow : hidden;
+	display : inline-block;
+}
+.beam-menu .menu-bar .menu-item.hover .menu-item-link{
+	border : 1px solid #99BBE8;
+	background : url(images/menu-item-over.gif);
+}
+.beam-menu .menu-bar .menu-item-link{
+	text-decoration : none;
+	display: block;
+	height : 24px;
+	line-height : 24px;
+	background : transparent;
+	border : 1px solid transparent;
+}
+.beam-menu .menu-bar .menu-item-icon{
+	width : 16px;
+	height : 16px;
+	margin: 4px 4px 0 2px;
+}
+.beam-menu .menu-bar .menu-item-icon.hidden{
+	width : 1px;
+}
+.beam-menu .menu-bar .menu-item-text{
+	position: relative;
+	top : -4px;
+	white-space : nowrap;
+	line-height : 16px;
+	color : 	#222222;
+	font :  normal 11px	helvetica,tahoma,verdana,sans-serif;
+}
+.beam-menu .menu-bar .menu-item-submenu{
+	font-size : 1px;
+	padding-left : 9px;
+	padding-top : 6px;
+	background : url(images/menu-itembar-arrow.png) no-repeat;
+	margin-left : 4px;
+	position: relative;
+	top : -3px;
+}
+.beam-menu .menu-bar  .menu-item.disabled{
+	filter: alpha(opacity=.5);
+	opacity: 0.5;
+}
+.beam-menu .menu-bar .menu-item.disabled .menu-item-link{
+	cursor : default;
+}
+
+.beam-menu .menu-box{
+	z-index : 1;
+	width : 150px;
+	padding : 2px;
+	position : absolute;
+	background : #F0F0F0;
+	border : 1px solid #99BBE8;
+	-moz-box-shadow:2px 2px 7px #333333;
+	-webkit-box-shadow:2px 2px 7px #333333;
+}
+.beam-menu .menu-box .menu-separator-y{
+	position : absolute;
+	left : 27px;
+	top : 2px;
+	width : 1px;
+	height : 1000px;
+	overflow : hidden;
+	border-left : 1px solid #E0E0E0;
+	z-index : 1;
+	background : #FFFFFF;
+}
+.beam-menu .menu-box .menu-separator-x{
+	width : auto;
+	overflow : hidden;
+	height : 1px;
+	margin-top : 1px;
+	border-top : 1px solid #E0E0E0;
+	background : #FFFFFF;
+}
+.beam-menu .menu-box .menu-item{
+	height : 26px;
+	line-height : 26px;
+	z-index : 2;
+	position : relative;
+}
+
+.beam-menu .menu-box .menu-item-link{
+	text-decoration : none;
+	display: block;
+	background : transparent;
+	border : 1px solid transparent;
+}
+.beam-menu .menu-box .menu-item.hover .menu-item-link{
+	border : 1px solid #99BBE8;
+	background : url(images/menu-item-over.gif);
+}
+.beam-menu .menu-box .menu-item-icon{
+	border : 0;
+	width : 16px;
+	height : 16px;
+	margin: 4px 11px 0 2px;
+}
+.beam-menu .menu-box .menu-item-text{
+	position: relative;
+	top : -4px;
+	white-space : nowrap;
+	line-height : 16px;
+	color : 	#222222;
+}
+.beam-menu .menu-box .menu-item-submenu{
+	width : 12px;
+	height : 9px;
+	top : 9px;
+	right : 0;
+	position : absolute;
+	background : url(images/menu-item-arrow.gif) no-repeat;
+}
+.beam-menu .menu-box  .menu-item.disabled{
+	filter: alpha(opacity=.5);
+	opacity: 0.5;
+}
+.beam-menu .menu-box .menu-item.disabled .menu-item-link{
+	cursor : default;
+}

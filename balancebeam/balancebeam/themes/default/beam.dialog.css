@@ -1,0 +1,135 @@
+.beam-dialog{
+	margin : 5px;
+	width : 200px;
+	position : fixed;
+	left : -1000px;
+	display : none;
+}
+.beam-dialog>.resize{
+	z-index : 1;
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	visibility : hidden;
+	overflow : hidden;
+	border : 1px dashed #3B5A82;
+}
+.beam-dialog>.resize>*{
+	visibility : visible;
+}
+.beam-dialog>.tb{
+	height : 5px;
+	overflow : hidden;
+	padding-left : 5px;
+	background : url(images/dialog_corners.gif) no-repeat 0 -10px;
+}
+.beam-dialog>.tb>.tbr{
+	height : 5px;
+	overflow : hidden;
+	padding-right : 5px;
+	background : url(images/dialog_corners.gif) no-repeat right -15px;
+}
+.beam-dialog>.tb>.tbr>.tbc{
+	height : 5px;
+	overflow : hidden;
+	background : url(images/dialog_corners.gif) repeat-x 0 0;
+}
+.beam-dialog>.cb{
+}
+.beam-dialog>.cb>.cbl{
+	float : left;
+	width : 5px;
+	height : 100%;
+	overflow : hidden;
+	background : url(images/dialog_sides.gif) repeat-y 0 0;
+}
+.beam-dialog>.cb>.cbr{
+	float : right;
+	width : 5px;
+	height : 100%;
+	overflow : hidden;
+	background : url(images/dialog_sides.gif) repeat-y right 0;
+}
+.beam-dialog>.cb>.cbc{
+	width : auto;
+	height : 100%;
+	background : #d6e0eb;
+	overflow : hidden;
+}
+.beam-dialog>.cb>.cbc>.head{
+	background-color : transparent;
+	font-size  : 11px ;
+	font-family : helvetica,tahoma,verdana,sans-seri ;
+	line-height : 16px;
+	height : 16px;
+	color : 	#04468C;
+}
+.beam-dialog>.cb>.cbc>.head.draggable{
+	cursor : move;
+}
+.beam-dialog>.cb>.cbc>.head>.close{
+	float : right;
+	height : 15px;
+	width : 15px;
+	background : url(images/global-sprites.gif) no-repeat 0 0;
+	cursor : pointer;
+}
+.beam-dialog>.cb>.cbc>.box{
+	border : 1px solid #B7CBEB;
+	margin-top : 5px;
+	background-color : #DFE8F6;
+	overflow : hidden;
+}
+.beam-dialog>.cb>.cbc>.box>.content{
+	position : relative;
+	height : 100%;
+	width : 100%;
+	float : left;
+	background-color : #FFF;
+}
+.beam-dialog>.cb>.cbc>.box>.content>.loading{
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	z-index : 2;
+	background : #FFF url(images/global_loading.gif) no-repeat center center;
+}
+.beam-dialog>.cb>.cbc>.box>.content>iframe{
+	width : 100%;
+	height : 100%;
+	margin : 0;
+	padding : 0;
+	border : 0;
+}
+.beam-dialog>.bb{
+	height : 5px;
+	overflow : hidden;
+	padding-left : 5px;
+	background : url(images/dialog_corners.gif) no-repeat 0 -20px;
+}
+.beam-dialog>.bb>.bbr{
+	height : 5px;
+	overflow : hidden;
+	padding-right : 5px;
+	background : url(images/dialog_corners.gif) no-repeat right -25px;
+}
+.beam-dialog>.bb>.bbr>.bbc{
+	height : 5px;
+	overflow : hidden;
+	background : url(images/dialog_corners.gif) repeat-x 0 -5px;
+}
+.beam-dialog-mask{
+	display : none;
+	position : fixed;
+	top : 0;
+	left :0;
+	width : 100%;
+	height : 100%;
+	opacity : 0.5;
+	font-size : 1px;
+	background-color : rgb(204, 204, 204);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Demo Navigator</title>
+<link rel="stylesheet" type="text/css" href="../themes/default/beam.uncompressed.css"></link>
+<script type="text/javascript" src="../lib/jquery-1.6.js"></script>
+<script type="text/javascript" src="../lib/jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../lib/jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../lib/widget/beam.toolkit.js"></script>
+
+<script type="text/javascript" src="../lib/widget/tree/beam.tree.js"></script>
+<script type="text/javascript" src="../lib/widget/tree/beam.tree.local.js"></script>
+<script type="text/javascript" src="../lib/widget/tree/beam.tree.xhr.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#tree").tree({
+		rootText : "在线样例",
+		hideRoot : true,
+		dataProvider : [
+              {title : "数据表格",id : "grid",children :[
+                  {title : "基本表格",id:"grid_base",url:"grid/grid_base.html"},
+                  {title : "数据结构",id:"grid_objectlist",url:"grid/grid_objectlist.html"},   
+                  {title : "大数据量",id:"grid_largedata",url:"grid/grid_largedata.html"},
+                  {title : "多层标题",id:"grid_multitle",url:"grid/grid_multitle.html"},
+                  {title : "隐藏标题",id:"grid_hideheader",url:"grid/grid_hideheader.html"},
+                  {title : "自动宽度",id:"grid_autowidth",url:"grid/grid_autowidth.html"},
+                  {title : "自动高度",id:"grid_autoheight",url:"grid/grid_autoheight.html"},
+                  {title : "宽百分比",id:"grid_percentage",url:"grid/grid_percentage.html"},
+                  {title : "排序功能",id:"grid_sortable",url:"grid/grid_sortable.html"},
+                  {title : "改变列宽",id:"grid_resizable",url:"grid/grid_resizable.html"},
+                  {title : "锁定多列",id:"grid_lockcolumn",url:"grid/grid_lockcolumn.html"},
+                  {title : "锁定多行",id:"grid_lockrow",url:"grid/grid_lockrow.html"},
+                  {title : "调整位置",id:"grid_draggable",url:"grid/grid_draggable.html"},
+                  {title : "弹出菜单",id:"grid_dropmenu",url:"grid/grid_dropmenu.html"},
+                  {title : "本地翻页",id:"grid_paging",url:"grid/grid_paging.html"},
+                  {title : "工具条栏",id:"grid_toolbar",url:"grid/grid_toolbar.html"},
+                  {title : "多选选择",id:"grid_selectable",url:"grid/grid_selectable.html"},
+                  {title : "综合应用",id:"grid_composite",url:"grid/grid_composite.html"}
+              ]},
+              {title : "弹出菜单",id : "menu",children:[
+                  {title : "横向菜单",id:"menu_bar",url:"menu/menu_bar.html"},
+                  {title : "纵向菜单",id:"menu_dropdown",url:"menu/menu_dropdown.html"}
+              ]},
+              {title : "调试工具",id : "debugger",url:"debugger/debugger.html"}
+		 ],
+		 onClick : function(data,target){
+			 if(data.url){
+				 parent.workspace.setUrl(data.url);
+			 }
+		 }
+	});
+});
+</script>
+</head>
+<body>
+	<div id="tree"></div>
+</body>
+</html>

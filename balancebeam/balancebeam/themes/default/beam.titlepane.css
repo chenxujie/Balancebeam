@@ -1,0 +1,53 @@
+.beam-titlepane{
+	overflow : hidden;
+	width : auto;
+	margin-bottom : 5px;
+	margin-top : 5px;
+}
+.beam-titlepane>.head{
+	width : auto;
+	overflow : hidden;
+	border-top : 1px solid #dfdfdf;
+	background : #fff url(images/titlepane_head.gif) repeat-x;
+	height : 15px;
+	background-position : 0 -10px;
+	padding : 7px 4px 7px 6px;
+	cursor : pointer;
+}
+.beam-titlepane>.head>.toggle{
+	float : left;
+	width : 7px;
+	height : 7px;
+	overflow : hidden;
+	vertical-align : middle;
+	margin-top : 3px;
+	background : url(images/titlepane_arrows.png) no-repeat -14px 0; 
+}
+.beam-titlepane>.head>.toggle.on{
+	background-position : 0 0;
+}
+.beam-titlepane>.head>.caption{
+	float : left;
+	wdith : 100px;
+	margin : 0px 4px 0px 6px;
+	vertical-align : middle;
+	font : bold 12px Arial, Verdana, Helvetica, sans-serif;
+}
+.beam-titlepane>.buttons{
+	width : auto;
+	height : 100%;
+	overflow : hidden;
+	text-align : right;
+}
+.beam-titlepane>.buttons>.button{
+	font : 12px Arial, Verdana, Helvetica, sans-serif;
+	text-decoration : none;
+	margin-left : 5px;
+	margin-right : 5px;
+}
+.beam-titlepane>.box{
+	width : auto;
+	overflow : hidden;
+	border-bottom : 1px solid #dfdfdf;
+	clear : both;
+}

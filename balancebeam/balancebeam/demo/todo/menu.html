@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../themes/default/uit.all.css"></link>
+<script type="text/javascript" src="../jquery-1.6.js"></script>
+<script type="text/javascript" src="../widget/utils/uit.toolkit.js"></script>
+<script type="text/javascript" src="../jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../widget/menu/uit.menu.js"></script>
+<script type="text/javascript">
+$(function(){
+	var incoPath = $.getContextPath()+"common/themes/default/images/",
+	 dataProvider = [
+	    				{
+	    					id : "liaoning",
+	    					title : "辽宁",
+	    					icon : incoPath + "grid-menu-asc.gif",
+	    					disabledIcon : incoPath + "grid-menu-asc.gif",
+	    					children : [
+	    					     { id:"shenyang",title:"沈阳",children:[
+	    																	{ id:"sy-heping",title:"和平区"},
+	    																	{ id:"sy-shenhe",title:"沈河区",href : "http://www.163.com"},
+	    																	{ id:"sy-tiexi",title:"铁西区",href : "http://www.sohu.com"},
+	    																	{ id:"sy-huanggu",title:"皇姑区"},
+	    																	{ id:"sy-yuhong",title:"于洪区"},
+	    																	{ id:"sy-dadong",title:"大东区"},
+	    																	{ id:"sy-hunnan",title:"浑南"}
+	    					                                          ]},
+	    					     { id:"dalian",title:"大连",disabled:true,children :[
+	    					                                         		{ id:"dl-zhongshan",title:"中山区"},
+	    					                                         		{ id:"dl-xiguang",title:"西岗区"},
+	    					                                         		{ id:"dl-shahekou",title:"沙河口区"},
+	    					                                         		{ id:"dl-ganjingzi",title:"甘井子区"}
+	    					                                         ]},
+	    					     { seperator:true },
+	    					     { id:"anshan",title:"鞍山",children:[
+	    					                                        		{ id:"as-tiedong",title:"铁东区"},
+	    					                                        		{ id:"as-tiexi",title:"铁西区"},
+	    					                                        		{ id:"as-lishan",title:"立山区"},
+	    					                                        		{ id:"as-qianshan",title:"千山区"}
+	    					                                        ]},
+	    					     { seperator:true },
+	    					     { id:"fushun",title:"抚顺",icon : incoPath + "grid-menu-lock.gif"},
+	    					     { id:"benxi",title:"本溪"},
+	    					     { id:"dandong",title:"丹东"},
+	    					     { id:"jinzhou",title:"锦州",disabled:true},
+	    					     { id:"yingkou",title:"营口",disabled:true},
+	    					     { id:"liaoyang",title:"辽阳"},
+	    					     { seperator:true },
+	    					     { id:"tieling",title:"铁岭"},
+	    					     { id:"fuxin",title:"阜新"},
+	    					     { id:"chaoyang",title:"朝阳"},
+	    					]
+	    				},
+	    				{
+	    					id : "guangdong",
+	    					title : "广东",
+	    					children : [
+	    					            	{ id:"guangzhou",title:"广州"},
+	    					            	{ id:"shezhen",title:"深圳"},
+	    					            	{ id:"foshan",title:"佛山"}
+	    					            ]
+	    				},
+	    				{
+	    					id : "shandong",
+	    					title : "山东",
+	    					children : [
+	    					            	{ id:"jinnan",title:"济南"},
+	    					            	{ id:"qingdao",title:"青岛"},
+	    					            	{ id:"yantai",title:"烟台"}
+	    					            ]
+	    				},
+	    				{
+	    					id : "beijing",
+	    					title : "北京",
+	    					onClick : function(){
+	    						alert("自定义方法：北京");
+	    					}
+	    				},
+	    				{
+	    					id : "shanghai",
+	    					title : "上海",
+	    					href : "http://www.baidu.com",
+	    					icon : incoPath + "grid-menu-unlock.gif"
+	    				}
+	    		   ];
+	
+	
+	
+	$("#menu").menu({
+		menuBar : {
+			width : "auto"
+		},
+		dataProvider : dataProvider,
+		onClick : function(data){
+			var href = data.href;
+			if(href){
+				window.location.href = href;
+			}
+			else{
+				alert("缺少url");
+			}
+		}
+	});
+	/*
+	$("#menu2").menu({
+		menuBar : false,
+		dataProvider : dataProvider
+	});
+	*/
+});
+
+</script>
+</head>
+<body>
+<br>
+	<div id="menu" ></div>
+	<div id="menu2"  style="position:absolute;top :50px;left:600px;"></div>
+</body>
+</html>

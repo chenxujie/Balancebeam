@@ -1,0 +1,65 @@
+.beam-tree{
+	text-align : left;
+	background : transparent;
+}
+.beam-tree .node{
+	height : 20px;
+	line-height : 20px;
+	overflow : hidden;
+}
+.beam-tree .node:hover{
+	background : #eee;
+}
+/*** 根结点 ***/
+.beam-tree>.node.root{
+	font-weight : bold;
+}
+.beam-tree .node>.status, .beam-tree .node>.logic, .beam-tree .node>.icon{
+	width : 16px;
+	height : 16px;
+	margin : 2px;
+	overflow : hidden;
+	float : left;
+}
+.beam-tree .node>.logic{
+	display : none;
+}
+.beam-tree .node>.caption{
+	text-indent : 3px;
+	overflow : hidden;
+	height : 20px;
+	line-height : 20px;
+	cursor : default;
+	text-decoration : underline;
+}
+.beam-tree .node>.status.collapse{ /***   ***/
+	background : url(images/tree_plus.gif) no-repeat;
+}
+.beam-tree .node>.status.expand{
+	background : url(images/tree_minus.gif) no-repeat;
+}
+.beam-tree .node>.status.leaf{
+	/*** background : url(images/tree_leaf.gif) no-repeat; **/
+}
+.beam-tree .node>.status.loading{
+	background : url(images/tree_loading.gif) no-repeat !important;
+}
+.beam-tree .node>.icon.collapse{
+	background : url(images/tree_collapse.gif) no-repeat;
+}
+.beam-tree .node>.icon.expand{
+	background : url(images/tree_expand.gif) no-repeat;
+}
+.beam-tree .node>.icon.leaf{
+	background : url(images/tree_leaf.gif) no-repeat;
+}
+.beam-tree .subcontainer{
+	clear : left;
+	display : none;
+	overflow : hidden;
+	margin-left : 20px;
+}
+/*** 设置第一层结点外边距为0 ***/
+.beam-tree.hideroot>.subcontainer{
+	 margin-left : 0 !important; 
+}

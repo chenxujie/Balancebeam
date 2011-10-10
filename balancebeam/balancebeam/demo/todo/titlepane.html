@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../../themes/default/uit.all.css"></link>
+<script type="text/javascript" src="../../jquery-1.6.js"></script>
+<script type="text/javascript" src="../utils/uit.toolkit.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../layout/uit.container.js"></script>
+<script type="text/javascript" src="../layout/uit.titlepane.js"></script>
+<script type="text/javascript" src="../layout/uit.adaptheight.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#titlepane").titlepane({height : "auto",marginTop : 10,width : "400px"});
+	$("#adaptheight").adaptheight({height : "50%", width : "500px",adaptions : "adaption1"});
+	$("#titlepane2").titlepane({height : "auto",height : "50%",marginTop : 10});
+	$("#adaption1").container({marginTop : 10});
+});
+</script>
+</head>
+<body>
+	<div id="titlepane">
+		<b>这是titlepane的内容</b>
+	</div>
+	<div id="adaptheight" style="border:1px solid #000;">
+		<div id="titlepane2">
+			<b>这是titlepane的内容2</b>
+		</div>
+		<div id="adaption1" style="border:1px solid red;">
+			可变容器部分
+		</div>
+	</div>
+</body>
+</html>

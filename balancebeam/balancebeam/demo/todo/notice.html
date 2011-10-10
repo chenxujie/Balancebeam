@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../../themes/default/uit.all.css"></link>
+<script type="text/javascript" src="../../jquery-1.5.2.js"></script>
+<script type="text/javascript" src="../utils/uit.toolkit.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../jquery/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../popup/uit.notice.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#notice").notice({});
+	$("#add").click(function(evt){
+		$("#notice").notice("add","随机数");
+		//$.showAjaxMask();
+	});
+});
+</script>
+</head>
+<body>
+	<div id="notice"></div>
+	<button id="add" >增加</button>
+</body>
+</html>
